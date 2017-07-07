@@ -41,6 +41,9 @@ class EyeGamePage:
     def set_current_time(self):
         return self.driver.find_element_by_css_selector(".clock").text
 
+    def get_title(self):
+        return self.driver.title
+
     def get_reached_lvl(self):
         return self.driver.find_element(By.CSS_SELECTOR, '.character-title').text
 
